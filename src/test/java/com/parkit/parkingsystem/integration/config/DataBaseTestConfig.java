@@ -48,5 +48,5 @@ public class DataBaseTestConfig extends DataBaseConfig {
                 logger.error("Error while closing result set",e);
             }
         }
-    }
+    }    
 }

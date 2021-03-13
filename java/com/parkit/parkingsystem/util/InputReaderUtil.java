@@ -6,11 +6,12 @@ import org.apache.logging.log4j.Logger;
 
 public class InputReaderUtil {
     private static final Logger logger = LogManager.getLogger("InputReaderUtil");
-    Scanner scan = new Scanner(System.in, "UTF-8");
+    Scanner scan = new Scanner(System.in);
     int input;
     String vehicleRegNumber;
     
     public int readSelection() {
+	int input;
 	try {
 	    input = Integer.parseInt(scan.nextLine());
 	    return input;
